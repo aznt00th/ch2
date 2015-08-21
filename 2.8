@@ -1,0 +1,15 @@
+/* Farenheit to Celsius
+*/
+#include <stdio.h>
+#define Translate -32
+#define Dilate 5.0/9
+
+int
+main(int argc, char *argv[]) {
+	double TempFarenheit, TempCelsius;
+	printf("Enter temperature in Farenheit: ");
+	scanf("%lf", &TempFarenheit);
+	TempCelsius= (TempFarenheit + Translate)*Dilate;
+	printf("%.2f Farenheit is %.2f Celsius\n", TempFarenheit, TempCelsius);
+	return 0;
+}
